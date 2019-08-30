@@ -1,2 +1,2 @@
-# Mission_Drishti
-Project on blinds.
+# Vaccination Portal
+Project on vaccination.
