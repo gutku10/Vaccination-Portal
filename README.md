@@ -1,2 +1,2 @@
 # Vaccination Portal
-Project on vaccination.
+Project on vaccination awareness System.
