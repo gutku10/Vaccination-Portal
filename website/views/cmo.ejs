@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <title>CMO</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">Dashboard</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title"> Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="images/baby.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy Rakestraw</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="images/baby.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham </span>is now following you
+                                                        <div class="notification-date">2 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="images/baby.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan Pechi</span> is watching your main repository
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img src="images/baby.jpg" alt="" class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica Caruso</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer"> <a href="#">View all notifications</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                            <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                                <li class="connection-list">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/github.png" alt="" > <span>Github</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/dribbble.png" alt="" > <span>Dribbble</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/dropbox.png" alt="" > <span>Dropbox</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/bitbucket.png" alt=""> <span>Bitbucket</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png" alt="" ><span>Mail chimp</span></a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/slack.png" alt="" > <span>Slack</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="conntection-footer"><a href="#">More</a></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/pp.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                    <span class="status"></span><span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="btn" href="prof.html" ><i class="fa fa-fw fa-user-circle"></i>Dashboard </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn" href="form-elements.html" ><i class="fa fa-fw fa-chart-pie"></i>Current Stats of Area</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="btn" href="pages\form1.html" ><i class="fa fa-fw fa-wpforms"></i>Edit ur Profile</a>
+                            </li>
+                            <li class="nav-divider">
+                                Features
+                            </li>
+                           <li class="nav-item">
+                                <a class="btn" href="form-elements.html" ><i class="fa fa-fw fa-map-marker-alt"></i>Maps </a>
+                            </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="influence-profile">
+                <div class="container-fluid dashboard-content ">
+                    <!-- ============================================================== -->
+                    <!-- pageheader -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h3 class="mb-2"> Welcome..! </h3>
+                                <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                                <div class="page-breadcrumb">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Profile Status</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- end pageheader -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- content -->
+                    <!-- ============================================================== -->
+                    <div class="row">
+                        <!-- ============================================================== -->
+                        <!-- profile -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-12 col-12">
+                            <!-- ============================================================== -->
+                            <!-- card profile -->
+                            <!-- ============================================================== -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="user-avatar text-center d-block">
+                                        <img src="images/pp.jpg" alt="User Avatar" class="rounded-circle user-avatar-xxl">
+                                    </div>
+                                    <div class="text-center">
+                                        <h2 class="font-24 mb-0">Utkrisht Agrawal</h2>
+                                        <p>Cheif Medical Officer</p>
+                                    </div>
+                                </div>
+                                <div class="card-body border-top">
+                                    <h3 class="font-16">Contact Information</h3>
+                                    <div class="">
+                                        <ul class="list-unstyled mb-0">
+                                        <li class="mb-2"><i class="fas fa-fw fa-envelope mr-2"></i>utkrishtisgutku@gmail.com</li>
+                                        <li class="mb-0"><i class="fas fa-fw fa-phone mr-2"></i>+918544985144</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body border-top">
+                                    <h3 class="font-16">Qualification</h3>
+                                    <h1 class="mb-0">MD-Physician</h1>
+                                    
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end card profile -->
+                            <!-- ============================================================== -->
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end profile -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- campaign data -->
+                        <!-- ============================================================== -->
+                        <div class="col-xl-9 col-lg-9 col-md-7 col-sm-12 col-12">
+                            <!-- ============================================================== -->
+                            <!-- campaign tab one -->
+                            <!-- ============================================================== -->
+                            <div class="influence-profile-content pills-regular">
+                                <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="pills-campaign-tab" data-toggle="pill" href="#pills-campaign" role="tab" aria-controls="pills-campaign" aria-selected="true">Status</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-packages-tab" data-toggle="pill" href="#pills-packages" role="tab" aria-controls="pills-packages" aria-selected="false">Schedule</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-review-tab" data-toggle="pill" href="#pills-review" role="tab" aria-controls="pills-review" aria-selected="false">Notifications</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pills-msg-tab" data-toggle="pill" href="#pills-msg" role="tab" aria-controls="pills-msg" aria-selected="false">Send Messages</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-campaign" role="tabpanel" aria-labelledby="pills-campaign-tab">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="section-block">
+                                                    <h3 class="section-title">Vaccination Status</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body" style="text-align: center">
+                                                        <h1 class="mb-1">240000</h1>
+                                                        <p>Vaccines Required</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body" style="text-align: center">
+                                                        <h1 class="mb-1">140000</h1>
+                                                        <p>Bought</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-body" style="text-align: center">
+                                                        <h1 class="mb-1">100000</h1>
+                                                        <p>Shortage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section-block">
+                                            <h3 class="section-title">Vaccination Centres Status</h3>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="media influencer-profile-data d-flex align-items-center p-2">
+                                                            <div class="mr-4">
+                                                                <img src="images/hosp.jpg" alt="User Avatar" class="user-avatar-lg">
+                                                            </div>
+                                                            <div class="media-body ">
+                                                                <div class="influencer-profile-data">
+                                                                    <h3 class="m-b-10">Centre 1</h3>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-top card-footer p-0">
+                                                <div class="campaign-metrics d-xl-inline-block">
+                                                    <h4 class="mb-0">10000</h4>
+                                                    <p>Requirement</p>
+                                                </div>
+                                                <div class="campaign-metrics d-xl-inline-block">
+                                                    <h4 class="mb-0">9000</h4>
+                                                    <p>Bought</p>
+                                                </div>
+                                                <div class="campaign-metrics d-xl-inline-block">
+                                                    <h4 class="mb-0">1000</h4>
+                                                    <p>Shortage</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                            <div class="media influencer-profile-data d-flex align-items-center p-2">
+                                                                <div class="mr-4">
+                                                                    <img src="images/hosp.jpg" alt="User Avatar" class="user-avatar-lg">
+                                                                </div>
+                                                                <div class="media-body ">
+                                                                    <div class="influencer-profile-data">
+                                                                        <h3 class="m-b-10">Centre 2</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="border-top card-footer p-0">
+                                                    <div class="campaign-metrics d-xl-inline-block">
+                                                        <h4 class="mb-0">6500</h4>
+                                                        <p>Requirements</p>
+                                                    </div>
+                                                    <div class="campaign-metrics d-xl-inline-block">
+                                                        <h4 class="mb-0">6000</h4>
+                                                        <p>Bought</p>
+                                                    </div>
+                                                    <div class="campaign-metrics d-xl-inline-block">
+                                                        <h4 class="mb-0">500</h4>
+                                                        <p>Shortage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                        <div class="media influencer-profile-data d-flex align-items-center p-2">
+                                                            <div class="mr-4">
+                                                                <img src="images/hosp.jpg" alt="User Avatar" class="user-avatar-lg">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                  <h3 class="m-b-10">Centre 3</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="border-top card-footer p-0">
+                                                    <div class="border-top card-footer p-0">
+                                                            <div class="campaign-metrics d-xl-inline-block">
+                                                                <h4 class="mb-0">9500</h4>
+                                                                <p>Requirement</p>
+                                                            </div>
+                                                            <div class="campaign-metrics d-xl-inline-block">
+                                                                <h4 class="mb-0">6500</h4>
+                                                                <p>Bought</p>
+                                                            </div>
+                                                            <div class="campaign-metrics d-xl-inline-block">
+                                                                <h4 class="mb-0">3000</h4>
+                                                                <p>Shortage</p>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-packages" role="tabpanel" aria-labelledby="pills-packages-tab">
+                                        <div class="row">
+                                                <container>
+                                                        <div class="container" style="padding-top: 5px">
+                                                            <table class="table table-bordered border " style="height:933px; width:689px; padding-top: 10px;" ><tbody><tr><td colspan="12" >National Immunization Schedule </span></strong></td>
+                                                            </tr><tr><td dir="LTR" style="height:25px; width:147px"><strong><span style="color:#117a8b">Vaccine </span></strong></td>
+                                                            <td dir="LTR" style="width:201px"><strong><span style="color:#117a8b">When to give </span></strong></td>
+                                                            <td dir="LTR" style="width:108px"><strong><span style="color:#117a8b">Dose </span></strong></td>
+                                                            <td dir="LTR" style="width:95px"><strong><span style="color:#117a8b">Route</span></strong></td>
+                                                            <td dir="LTR" style="width:139px"><strong><span style="color:#117a8b">Site</span></strong></td>
+                                                            </tr><tr><td class="rtecenter" colspan="5" dir="LTR" style="height: 25px; width: 456px;">For Infants </td>
+                                                            </tr><tr><td dir="LTR" style="height:63px; width:147px" data-toggle="tooltip" data-placement="top" title=" Bacillus Calmette–Guérin (BCG) vaccine is a vaccine primarily used against tuberculosis (TB). In countries where tuberculosis or leprosy is common, one dose is recommended in healthy babies as close to the time of birth as possible.
+                                                            Target disease: Tuberculosis
+                                                            Type: Live bacteria
+                                                             "> <span style="color:#117a8b">BCG </span></td>
+                                                            <td dir="LTR" style="width:201px">At birth or as early as possible till one year of age </td>
+                                                            <td dir="LTR" style="width:108px">0.1ml  (0.05ml until 1 month of age) </td>
+                                                            <td style="width:95px">Intra -dermal</td>
+                                                            <td style="width:139px">Left Upper Arm</td>
+                                                            </tr><tr><td dir="LTR" style="height:42px; width:147px"><span style="color:#117a8b" data-toggle="tooltip" data-placement="top" title="The hepatitis B vaccine is an injection (or shot) that is generally given in the arm and as a three-dose series on a 0, 1, and 6-month schedule. The recommended doses depend on the vaccine brand and the person's age. 1st Shot - At any given time, but newborns should receive this dose in the delivery room.
+                                                                ">Hepatitis B Birth dose </span></td>
+                                                            <td dir="LTR" style="width:201px">At birth or as early as possible within 24 hours </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Intramuscular</td>
+                                                            <td style="width:139px">Anterolateral side of mid thigh-LEFT</td>
+                                                            </tr><tr><td dir="LTR" style="height:63px; width:147px"><span style="color:#117a8b"data-toggle="tooltip" data-placement="top" title="Oral polio vaccine (OPV)
+                                                                OPV consists of a mixture of live attenuated poliovirus strains of each of the three serotypes, selected by their ability to mimic the immune response following infection with wild polioviruses, but with a significantly reduced incidence of spreading to the central nervous system. Three or more spaced doses of OPV are required to generate adequate levels of seroconversion.">OPV Birth dose </span></td>
+                                                            <td dir="LTR" style="width:201px">At birth or as early as possible within the first 15 days </td>
+                                                            <td dir="LTR" style="width:108px">2 drops </td>
+                                                            <td style="width:95px">Oral</td>
+                                                            <td style="width:139px">-</td>
+                                                            </tr><tr><td dir="LTR" style="height:57px; width:147px"><span style="color:#117a8b" data-toggle="tooltip" data-placement="top" title="">OPV 1,2 &amp; 3 </span></td>
+                                                            <td dir="LTR" style="width:201px"> At 6 weeks, 10 weeks &amp; 14 weeks </td>
+                                                            <td dir="LTR" style="width:108px">2 drops </td>
+                                                            <td style="width:95px">Oral</td>
+                                                            <td style="width:139px">-</td>
+                                                            </tr><tr><td dir="LTR" style="height:57px; width:147px" ><span style="color:#117a8b"data-toggle="tooltip" data-placement="top" title="Countries will introduce at least one dose of IPV to their routine immunization schedules
+                                                                before the switch from tOPV to bOPV. IPV will protect against the type 2 poliovirus after the
+                                                                type 2 component of OPV is removed. It will also boost immunity to types 1 and 3.
+                                                                ">IPV (inactivated Polio Vaccine)</span></td>
+                                                            <td dir="LTR" style="width:201px"> 14 weeks </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Intramuscular</td>
+                                                            <td style="width:139px">Anterolateral side of mid thigh-RIGHT</td>
+                                                            </tr><tr><td dir="LTR" style="height:57px; width:147px"><span style="color:#117a8b"data-toggle="tooltip" data-placement="top" title="A pentavalent vaccine, or 5-in-1 vaccine, is a combination vaccine with five individual vaccines conjugated into one, intended to actively protect people from multiple diseases.">Pentavelant  1,2 &amp; 3 </span></td>
+                                                            <td dir="LTR" style="width:201px"> At 6 weeks, 10 weeks &amp; 14 weeks </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Intramuscular</td>
+                                                            <td style="width:139px">Anterolateral side of mid thigh-LEFT</td>
+                                                            </tr><tr><td dir="LTR" style="height:48px; width:147px" data-toggle="tooltip" data-placement="top" title="Rotavirus vaccine is a vaccine used to protect against rotavirus infections, which are the leading cause of severe diarrhea among young children. The vaccines prevent 15–34% of severe diarrhea in the developing world and 37–96% of severe diarrhea in the developed world."><span style="color:#117a8b">Rota Virus Vaccine</span></td>
+                                                            <td dir="LTR" style="width:201px"> At 6 weeks, 10 weeks &amp; 14 weeks </td>
+                                                            <td dir="LTR" style="width:108px">5 drops </td>
+                                                            <td style="width:95px">Oral</td>
+                                                            <td style="width:139px">-</td>
+                                                            </tr><tr><td dir="LTR" style="height:91px; width:147px" data-toggle="tooltip" data-placement="top" title="The MMR vaccine is a vaccine against measles, mumps, and rubella. The first dose is generally given to children around 9 to 15 months of age, with a second dose at 15 months to 6 years of age, with at least 4 weeks between the doses."><span style="color:#117a8b">Measles 1<sup>st</sup> Dose </span></td>
+                                                            <td dir="LTR" style="width:201px">9 completed months-12 months. (give up to 5 years if not received at 9-12 months age) </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Subcutaneous</td>
+                                                            <td style="width:139px">Right Upper Arm</td>
+                                                            </tr><tr><td dir="LTR" style="height:42px; width:147px" data-toggle="tooltip" data-placement="top" title="Hepatitis A vaccine is a vaccine that prevents hepatitis A. It is effective in around 95% of cases and lasts for at least fifteen years and possibly a person's entire life. If given, two doses are recommended beginning after the age of one. It is given by injection into a muscle."><span style="color:#117a8b">Vitamin A, 1<sup>st</sup> Dose </span></td>
+                                                            <td dir="LTR" style="width:201px">At 9 months with measles </td>
+                                                            <td dir="LTR" style="width:108px">1 ml  (1 lakh IU) </td>
+                                                            <td style="width:95px">Oral</td>
+                                                            <td style="width:139px">-</td>
+                                                            </tr><tr><td class="rtecenter" colspan="5" dir="LTR" style="height: 31px; width: 456px;"><strong><span style="color:#117a8b">For children</span></strong></td>
+                                                            </tr><tr><td dir="LTR" style="height:55px; width:147px" data-toggle="tooltip" data-placement="top" title="pt vaccine protects children and adults against diphtheria (D), pertussis (P, also known as whooping cough) and tetanus (T). dpt vaccine is given as a number of injections to infants and young children. Children should get three injections in the first year and a fourth injection when they are 18 months old."><span style="color:#117a8b">DPT 1<sup>st </sup> booster </span></td>
+                                                            <td dir="LTR" style="width:201px">16-24 months </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Intramuscular</td>
+                                                            <td style="width:139px">Anterolateral side of mid thigh-LEFT</td>
+                                                            </tr><tr><td dir="LTR" style="height:32px; width:147px" data-toggle="tooltip" data-placement="top" title="Inactivated polio vaccine (IPV) is the only polio vaccine that has been given in the United States since 2000. IPV is given by shot in the leg or arm, depending on the patient's age. Oral polio vaccine (OPV) is used in other countries. CDC recommends that children get four doses of polio vaccine."><span style="color:#117a8b">OPV Booster </span></td>
+                                                            <td dir="LTR" style="width:201px">16-24 months </td>
+                                                            <td dir="LTR" style="width:108px">2 drops </td>
+                                                            <td style="width:95px">Oral</td>
+                                                            <td style="width:139px"> </td>
+                                                            </tr><tr><td dir="LTR" style="height:32px; width:147px" data-toggle="tooltip" data-placement="top" title="MMR vaccine is very effective at protecting people against measles, mumps, and rubella, and preventing the complications caused by these diseases. People who received two doses of MMR vaccine as children according to the U.S. vaccination schedule are usually considered protected for life and don't need a booster dose."><span style="color:#117a8b">Measles 2<sup>nd</sup>  dose </span></td>
+                                                            <td dir="LTR" style="width:201px">16-24 Months </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Subcutaneous</td>
+                                                            <td style="width:139px">Right Upper Arm</td>
+                                                            </tr><tr><td dir="LTR" style="height:82px; width:147px" data-toggle="tooltip" data-placement="top" title="Vitamin A is essential for the functioning of the immune system. Giving vitamin A supplements to children who need them increases their resistance to disease, and improves their chances for survival, growth and development. Vitamin A deficiency (VAD) is a global problem."><span style="color:#117a8b">Vitamin A  (2<sup>nd</sup> to 9<sup>th</sup> dose) </span></td>
+                                                            <td dir="LTR" style="width:201px">16 months with DPT/OPV booster, then, one dose every 6 month up to the age of 5 years) </td>
+                                                            <td dir="LTR" style="width:108px">2 ml  (2 lakh IU) </td>
+                                                            <td style="width:95px">Oral</td>
+                                                            <td style="width:139px">-</td>
+                                                            </tr><tr><td dir="LTR" style="height:32px; width:147px" data-toggle="tooltip" data-placement="top" title="DPT (also DTP and DTwP) is a class of combination vaccines against three infectious diseases in humans: diphtheria, pertussis (whooping cough), and tetanus. The vaccine components include diphtheria and tetanus toxoids and killed whole cells of the bacterium that causes pertussis (wP)."><span style="color:#117a8b">DPT 2<sup>nd</sup> Booster </span></td>
+                                                            <td dir="LTR" style="width:201px">5-6 years </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml. </td>
+                                                            <td style="width:95px">Intramuscular</td>
+                                                            <td style="width:139px">Left Upper Arm</td>
+                                                            </tr><tr><td dir="LTR" style="height:32px; width:147px" data-toggle="tooltip" data-placement="top" title="Tetanus vaccine, also known as tetanus toxoid (TT), is an inactive vaccine used to prevent tetanus. During childhood five doses are recommended, with a sixth given during adolescence. Additional doses every 10 years are recommended."><span style="color:#117a8b">TT </span></td>
+                                                            <td dir="LTR" style="width:201px">10 years &amp; 16 years </td>
+                                                            <td dir="LTR" style="width:108px">0.5 ml </td>
+                                                            <td style="width:95px">Intramuscular</td>
+                                                            <td style="width:139px">Upper Arm</td>
+                                                            </tr></tbody></table>
+                                                        </div>
+                                                    </container>
+                                            <!-- <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                <div class="section-block">
+                                                    <h2 class="section-title">My Packages</h2>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-header bg-primary text-center p-3 ">
+                                                        <h4 class="mb-0 text-white"> Basic</h4>
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h1 class="mb-1">$150</h1>
+                                                        <p>Per Month Plateform</p>
+                                                    </div>
+                                                    <div class="card-body border-top">
+                                                        <ul class="list-unstyled bullet-check font-14">
+                                                            <li>Facebook, Instagram, Pinterest,Snapchat.</li>
+                                                            <li>Guaranteed follower growth for increas brand awareness.</li>
+                                                            <li>Daily updates on choose platforms</li>
+                                                            <li>Stronger customer service through daily interaction</li>
+                                                            <li>Monthly progress report</li>
+                                                            <li>1 Million Followers</li>
+                                                        </ul>
+                                                        <a href="#" class="btn btn-outline-secondary btn-block btn-lg">Get Started</a>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-header bg-info text-center p-3">
+                                                        <h4 class="mb-0 text-white"> Standard</h4>
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h1 class="mb-1">$350</h1>
+                                                        <p>Per Month Plateform</p>
+                                                    </div>
+                                                    <div class="card-body border-top">
+                                                        <ul class="list-unstyled bullet-check font-14">
+                                                            <li>Facebook, Instagram, Pinterest,Snapchat.</li>
+                                                            <li>Guaranteed follower growth for increas brand awareness.</li>
+                                                            <li>Daily updates on choose platforms</li>
+                                                            <li>Stronger customer service through daily interaction</li>
+                                                            <li>Monthly progress report</li>
+                                                            <li>2 Blog Post & 3 Social Post</li>
+                                                            <li>5 Millions Followers</li>
+                                                            <li>Growth Result</li>
+                                                        </ul>
+                                                        <a href="#" class="btn btn-secondary btn-block btn-lg">Get Started</a>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <!-- <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                                                <div class="card">
+                                                    <div class="card-header bg-primary text-center p-3">
+                                                        <h4 class="mb-0 text-white">Premium</h4>
+                                                    </div>
+                                                    <div class="card-body text-center">
+                                                        <h1 class="mb-1">$550</h1>
+                                                        <p>Per Month Plateform</p>
+                                                    </div>
+                                                    <div class="card-body border-top">
+                                                        <ul class="list-unstyled bullet-check font-14">
+                                                            <li>Facebook, Instagram, Pinterest,Snapchat.</li>
+                                                            <li>Guaranteed follower growth for increas brand awareness.</li>
+                                                            <li>Daily updates on choose platforms</li>
+                                                            <li>Stronger customer service through daily interaction</li>
+                                                            <li>Monthly progress report & Growth Result</li>
+                                                            <li>4 Blog Post & 6 Social Post</li>
+                                                        </ul>
+                                                        <a href="#" class="btn btn-secondary btn-block btn-lg">Contact us</a>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-review" role="tabpanel" aria-labelledby="pills-review-tab">
+                                        <div class="card">
+                                            <h5 class="card-header">Notifications</h5>
+                                            <div class="card-body">
+                                                <div class="review-block">
+                                                    <p class="review-text font-italic m-0">Kindly help on this.</p>
+                                                    <span class="text-dark font-weight-bold">Dr. Campbell</span><small class="text-mute"></small>
+                                                </div>
+                                            </div>
+                                            <div class="card-body border-top">
+                                                <div class="review-block">
+                                                    <p class="review-text font-italic m-0">Scheduled appointment</p>
+                                                    <span class="text-dark font-weight-bold">Dr. Campbell</span><small class="text-mute"></small>
+                                                </div>
+                                            </div>
+                                            <div class="card-body border-top">
+                                                <div class="review-block">
+                                                        <p class="review-text font-italic m-0">Scheduled appointment</p>
+                                                        <span class="text-dark font-weight-bold">Dr. Campbell</span><small class="text-mute"></small>
+                                                    </div>
+                                            </div>
+                                            <div class="card-body border-top">
+                                                <div class="review-block">
+                                                        <p class="review-text font-italic m-0">Urgent consultation required</p>
+                                                        <span class="text-dark font-weight-bold">Dr. Campbell</span><small class="text-mute"></small>
+                                                    </div>
+                                            </div>
+                                            <div class="card-body border-top">
+                                                <div class="review-block">
+                                                        <p class="review-text font-italic m-0">Scheduled appointment</p>
+                                                        <span class="text-dark font-weight-bold">Dr. Campbell</span><small class="text-mute"></small>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination">
+                                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-msg" role="tabpanel" aria-labelledby="pills-msg-tab">
+                                        <div class="card">
+                                            <h5 class="card-header">Send Messages</h5>
+                                            <div class="card-body">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="offset-xl-3 col-xl-6 offset-lg-3 col-lg-3 col-md-12 col-sm-12 col-12 p-4">
+                                                            <div class="form-group">
+                                                                <label for="name">Name</label>
+                                                                <input type="text" class="form-control form-control-lg" id="name" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="email">Email</label>
+                                                                <input type="email" class="form-control form-control-lg" id="email" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="subject">Subject</label>
+                                                                <input type="text" class="form-control form-control-lg" id="subject" placeholder="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="messages">Messgaes</label>
+                                                                <textarea class="form-control" id="messages" rows="3"></textarea>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary float-right">Send Message</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- end campaign tab one -->
+                            <!-- ============================================================== -->
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- end campaign data -->
+                        <!-- ============================================================== -->
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end content -->
+            <!-- ============================================================== -->
+            <div>
+                    <div class="footer">
+                            <div class="container-fluid">
+                                
+                                    <div style="text-align: center">
+                                        Vaccination Console.
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1  -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+   
+</body>
+ 
+</html>
